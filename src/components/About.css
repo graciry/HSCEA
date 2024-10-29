@@ -1,0 +1,138 @@
+
+
+.about-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+
+.background-image-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('../images/buko3.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  justify-content: flex-start; /* Start from the top */
+  align-items: center; /* Center horizontally */
+  padding: 1rem;
+}
+
+.about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth fade-in */
+}
+
+.background-image-container:hover .about-overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.about-content {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #2c7a7b;
+}
+
+.text-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Media Queries */
+
+/* For tablets (landscape) */
+@media (max-width: 1024px) {
+  .about-content {
+    max-width: 700px;
+    padding: 1.5rem;
+  }
+  .text-content h2 {
+    font-size: 1.75rem;
+  }
+  .text-content h3 {
+    font-size: 1.5rem;
+  }
+  .text-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* For tablets (portrait) */
+@media (max-width: 768px) {
+  .about-content {
+    max-width: 600px;
+    padding: 1rem;
+  }
+  .text-content h2 {
+    font-size: 1.5rem;
+  }
+  .text-content h3 {
+    font-size: 1.3rem;
+  }
+  .text-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .about-content {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .text-content h2 {
+    font-size: 1.25rem;
+  }
+  .text-content h3 {
+    font-size: 1.1rem;
+  }
+  .text-content p {
+    font-size: 0.75rem;
+  }
+}
+
+/* For small mobile devices (small phones) */
+@media (max-width: 320px) {
+  .about-content {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  .text-content h2 {
+    font-size: 1rem;
+  }
+  .text-content h3 {
+    font-size: 0.9rem;
+  }
+  .text-content p {
+    font-size: 0.75rem;
+  }
+}

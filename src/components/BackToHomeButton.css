@@ -1,0 +1,25 @@
+.back-to-home-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2c7a7b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.back-to-home-btn:hover {
+    background-color: #276c74;
+}
+
+.arrow {
+    font-size: 1.2rem;
+}

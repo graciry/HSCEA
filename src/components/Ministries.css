@@ -1,0 +1,149 @@
+.Ministries-section {
+    position: relative;
+    padding: 3rem 2rem;
+    background-color: gray;
+    max-width: 2000px;
+    min-height: 160vh;
+}
+
+.Ministries-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    padding-top: 60px;
+
+}
+
+.ministries-timeline {
+    position: relative;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+.ministries-timeline::after{
+    
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 6px;
+        height: 100%;
+        background-color: #fff;
+        transform: translateX(-50%);
+        z-index: -1;
+        margin-left: -3px;
+    
+}
+
+.container {
+    width: 45%;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.text-box h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.text-box small {
+    font-size: 0.875rem;
+    color: #777;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.text-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.left-container {
+    float: left;
+    clear: both;
+}
+
+.right-container {
+    float: right;
+    clear: both;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.left-arrow {
+    left: 100%;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ccc transparent transparent;
+}
+
+.right-arrow {
+    right: 100%;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #ccc;
+}
+
+/* Central Line */
+.Ministries-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #ccc;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Media Queries */
+
+/* Small devices (600px and down) */
+@media (max-width: 600px) {
+    .ministries-timeline {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .left-arrow, .right-arrow {
+        display: none; /* Hide arrows on small screens */
+    }
+
+    .Ministries-section::before {
+        display: none; /* Hide the central line on small screens */
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .left-container, .right-container {
+        float: none;
+    }
+
+    .left-arrow, .right-arrow {
+        display: none; /* Hide arrows on tablets */
+    }
+
+    .Ministries-section::before {
+        display: none; /* Hide the central line on tablets */
+    }
+}

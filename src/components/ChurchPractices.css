@@ -1,0 +1,63 @@
+.practices-section {
+    padding: 2rem;
+    background-color: #2c7a7b;
+    text-align: center;
+    
+
+  }
+  .visible {
+    display: block; /* Ensure this is applied to elements that should be visible */
+  }
+  
+  .section-title {
+    font-size: 55px;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 60px;
+    
+  }
+  .section-content{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 40px;
+   
+
+  }
+  
+  .practices-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .practice-card {
+    width: 350px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .practice-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-container {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size:30px;
+    margin-bottom: 40px;
+    color: black;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

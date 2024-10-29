@@ -1,0 +1,39 @@
+
+
+body {
+  background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+}
+
+html, body {
+  overflow: auto;/* Ensure scrolling is enabled */
+  height: 100%; /* Full height for html and body */
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
+  padding-top: 5rem; /* Tailwind's pt-16 (16 * 0.25rem = 4rem) */
+}
+
+header {
+  background-color: #008080; /* Tailwind's bg-tealblue (or a specific teal blue color) */
+  color: #ffffff; /* Tailwind's text-white */
+  padding: 0.5rem; /* Tailwind's p-4 (4 * 0.25rem = 1rem) */
+}
+
+footer {
+  background-color: #2d3748; /* Tailwind's bg-gray-800 */
+  color: #ffffff; /* Tailwind's text-white */
+  padding: 1rem; /* Tailwind's p-4 */
+  text-align: center; /* Tailwind's text-center */
+}
+
+main {
+  flex-grow: 1; /* Ensure main content expands to fill space */
+}
+
+
+
+
+
+
+
